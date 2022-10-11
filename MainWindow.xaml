@@ -21,44 +21,58 @@
         </Grid.ColumnDefinitions>
         
         <Border BorderBrush="Black" BorderThickness="1" Margin="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
-            <Viewbox>
-                <TextBlock x:Name="visor" TextAlignment="Right" VerticalAlignment="Center" FontSize="30"></TextBlock>
+            <Viewbox HorizontalAlignment="Right">
+                <TextBlock x:Name="visor" VerticalAlignment="Center" FontSize="30"></TextBlock>
             </Viewbox>
         </Border>
 
-        <Viewbox>
-            <Button x:Name="button1" Grid.Row="1" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="1">1</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button2" Grid.Row="1" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="2">2</Button>
-        </Viewbox>
-        <Viewbox>
-            <Button x:Name="button3" Grid.Row="1" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="3">3</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button4" Grid.Row="2" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="4">4</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button5" Grid.Row="2" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="5">5</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button6" Grid.Row="2" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="6">6</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button8" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="8">8</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button9" Grid.Row="3" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="9">9</Button>
-        </Viewbox>
-        
-        <Viewbox>
-            <Button x:Name="button0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" Margin="5" Click="button_Click" Tag="0">0</Button>
-        </Viewbox>
+        <Button x:Name="button1" Grid.Row="1" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="1">
+            <Viewbox>
+                <TextBlock>1</TextBlock>
+            </Viewbox>
+        </Button>
+
+
+        <Button x:Name="button2" Grid.Row="1" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="2">
+            <Viewbox>
+                <TextBlock>2</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button3" Grid.Row="1" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="3">
+            <Viewbox>
+                <TextBlock>3</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button4" Grid.Row="2" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="4">
+            <Viewbox>
+                <TextBlock>4</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button5" Grid.Row="2" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="5">
+            <Viewbox>
+                <TextBlock>5</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button6" Grid.Row="2" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="6">
+            <Viewbox>
+                <TextBlock>6</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button7" Grid.Row="3" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="7">
+            <Viewbox>
+                <TextBlock>7</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button8" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="8">
+            <Viewbox>
+                <TextBlock>8</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button9" Grid.Row="3" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="9">
+            <Viewbox>
+                <TextBlock>9</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="button0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" Margin="5" Click="button_Click" Tag="0">0</Button>
     </Grid>
 </Window>
