@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
         Title="Calculadora" MinHeight="420" Height="575" MinWidth="275" Width="555" Icon="/assets/calculator.ico">
-    <Grid>
+    <Grid x:Name="numberGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -26,53 +26,6 @@
             </Viewbox>
         </Border>
 
-        <Button x:Name="button1" Grid.Row="1" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="1">
-            <Viewbox>
-                <TextBlock>1</TextBlock>
-            </Viewbox>
-        </Button>
-
-
-        <Button x:Name="button2" Grid.Row="1" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="2">
-            <Viewbox>
-                <TextBlock>2</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button3" Grid.Row="1" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="3">
-            <Viewbox>
-                <TextBlock>3</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button4" Grid.Row="2" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="4">
-            <Viewbox>
-                <TextBlock>4</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button5" Grid.Row="2" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="5">
-            <Viewbox>
-                <TextBlock>5</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button6" Grid.Row="2" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="6">
-            <Viewbox>
-                <TextBlock>6</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button7" Grid.Row="3" Grid.Column="0" FontSize="20" Margin="5" Click="button_Click" Tag="7">
-            <Viewbox>
-                <TextBlock>7</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button8" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="5" Click="button_Click" Tag="8">
-            <Viewbox>
-                <TextBlock>8</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="button9" Grid.Row="3" Grid.Column="2" FontSize="20" Margin="5" Click="button_Click" Tag="9">
-            <Viewbox>
-                <TextBlock>9</TextBlock>
-            </Viewbox>
-        </Button>
         <Button x:Name="button0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" Margin="5" Click="button_Click" Tag="0">0</Button>
     </Grid>
 </Window>

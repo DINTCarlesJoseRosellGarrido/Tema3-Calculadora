@@ -23,12 +23,44 @@ namespace Tema3_Calculadora
         public MainWindow()
         {
             InitializeComponent();
+
+            createButtons();
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Button boton = (Button)sender;
             visor.Text += boton.Tag.ToString();
+        }
+
+        private void createButtons()
+        {
+            int numberText = 1;
+
+            for(int i = 1; i<4; i++)
+            {
+                for(int j = 0; j<3; j++)
+                {
+                    Button b = new Button();
+                    Viewbox vb = new Viewbox();
+                    TextBlock tb = new TextBlock();
+
+                    tb.Text = $"{numberText}";
+                    vb.Child = tb;
+                    b.Content = vb;
+
+                    //b.Style = (Style)this.Resources["calculatorButtonStyle"];
+                    b.Click += button_Click;
+                    b.Tag = numberText.ToString();
+                    Grid.SetRow(b, i);
+                    Grid.SetColumn(b,j);
+
+                    numberGrid.Children.Add(b);
+
+                    numberText++;
+                }
+            }
         }
     }
 }
