@@ -6,6 +6,15 @@
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
         Title="Calculadora" MinHeight="420" Height="575" MinWidth="275" Width="555" Icon="/assets/calculator.ico">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="5"/>
+            <EventSetter Event="Click" Handler="button_Click"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid x:Name="numberGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -26,6 +35,6 @@
             </Viewbox>
         </Border>
 
-        <Button x:Name="button0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" Margin="5" Click="button_Click" Tag="0">0</Button>
+        <Button x:Name="button0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Tag="0">0</Button>
     </Grid>
 </Window>

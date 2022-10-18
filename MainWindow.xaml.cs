@@ -50,8 +50,8 @@ namespace Tema3_Calculadora
                     vb.Child = tb;
                     b.Content = vb;
 
-                    //b.Style = (Style)this.Resources["calculatorButtonStyle"];
-                    b.Click += button_Click;
+                    b.Style = (Style)this.Resources["calculatorButtonStyle"];
+                    //b.Click += button_Click;
                     b.Tag = numberText.ToString();
                     Grid.SetRow(b, i);
                     Grid.SetColumn(b,j);
